@@ -35,6 +35,20 @@ async fn main() {
 }
 ```
 
+## 本地编译
+
+```bash
+cargo build --target wasm32-wasi --release
+```
+
+## 本地运行
+
+```bash
+wasmedge target/wasm32-wasi/release/wasm-demo.wasm
+
+curl localhost:8080
+```
+
 ## 编译镜像
 
 ```bash
@@ -43,12 +57,10 @@ async fn main() {
 
 ## 运行镜像
 
+> 注意：需要容器运行时支持，目前新版的 Docker Desktop 已经支持开启 Wasm 支持，可以参考 [Docker + WASM](https://wasmedge.org/docs/zh/start/build-and-run/docker_wasm/)。
+
 ```bash
-docker run -dp 8080:8080 --rm --runtime=io.containerd.wasmedge.v1 --platform=wasi/wasm poneding/rust-hello
+docker run -dp 8080:8080 --rm --runtime=io.containerd.wasmedge.v1 --platform=wasi/wasm poneding/wasm-demo-rust
 
 curl localhost:8080
 ```
-
-## 参考
-
-- [Docker + WASM](https://wasmedge.org/docs/zh/start/build-and-run/docker_wasm/)

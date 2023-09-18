@@ -4,7 +4,7 @@ use warp::Filter;
 async fn main() {
     let hello = warp::get()
 	.and(warp::path::end())
-	.map(|| "Hello World!");
+	.map(|| "Hello Wasm!\n");
 
     warp::serve(hello).run(([0,0,0,0], 8080)).await
 }

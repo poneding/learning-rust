@@ -2,23 +2,12 @@
 
 # Learning Rust
 
-## [rust-lang-book](rust-lang-book/index.md)
+## [Rust 程序设计语言](rust-lang-book/index.md)
 
-- [rlb00_hello-world](rust-lang-book/rlb00_hello-world/index.md)
+- [Rust Hello World](rust-lang-book/rlb00_hello-world/index.md)
   - [Rust Hello World](rust-lang-book/rlb00_hello-world/README.md)
 
-- [rlb01_hello-cargo](rust-lang-book/rlb01_hello-cargo/index.md)
-  - [target](rust-lang-book/rlb01_hello-cargo/target/index.md)
-    - [package](rust-lang-book/rlb01_hello-cargo/target/package/index.md)
-      - [rlb01_hello-cargo-0.1.0](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.1.0/index.md)
-        - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.1.0/README.md)
-
-      - [rlb01_hello-cargo-0.1.1](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.1.1/index.md)
-        - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.1.1/README.md)
-
-      - [rlb01_hello-cargo-0.2.0](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.2.0/index.md)
-        - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/target/package/rlb01_hello-cargo-0.2.0/README.md)
-
+- [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/index.md)
   - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/README.md)
 
 - [Rust 程序设计语言](rust-lang-book/README.md)

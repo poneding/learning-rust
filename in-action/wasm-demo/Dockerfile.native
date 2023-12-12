@@ -1,4 +1,0 @@
-FROM scratch
-WORKDIR /run
-COPY target/wasm32-wasi/release/wasm-demo.wasm ./wasm-demo.wasm
-ENTRYPOINT [ "./wasm-demo.wasm" ]

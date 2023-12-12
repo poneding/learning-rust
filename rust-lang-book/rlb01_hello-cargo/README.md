@@ -46,7 +46,7 @@ cargo install --path .
 ```toml
 [package]
 name = "rlb01_hello-cargo"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "A hello world program in Rust"

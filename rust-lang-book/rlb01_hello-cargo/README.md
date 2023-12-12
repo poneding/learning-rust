@@ -54,8 +54,8 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 keywords = ["hello", "world"]
 categories = ["hello-world"]
-repository = "https://github.com/poneding/learnging-rust/rust-lang-book/rlb01_hello-cargo"
-homepage = "https://github.com/poneding/learnging-rust/rust-lang-book/rlb01_hello-cargo"
+repository = "https://github.com/poneding/learning-rust/tree/master/rust-lang-book/rlb01_hello-cargo"
+homepage = "https://github.com/poneding/learning-rust/tree/master/rust-lang-book/rlb01_hello-cargo"
 ```
 
 ```bash

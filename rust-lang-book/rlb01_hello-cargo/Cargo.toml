@@ -1,6 +1,6 @@
 [package]
 name = "rlb01_hello-cargo"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "A hello world program in Rust"
@@ -8,8 +8,8 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 keywords = ["hello", "world"]
 categories = ["hello-world"]
-repository = "https://github.com/poneding/learnging-rust/rust-lang-book/rlb01_hello-cargo"
-homepage = "https://github.com/poneding/learnging-rust/rust-lang-book/rlb01_hello-cargo"
+repository = "https://github.com/poneding/learning-rust/tree/master/rust-lang-book/rlb01_hello-cargo"
+homepage = "https://github.com/poneding/learning-rust/tree/master/rust-lang-book/rlb01_hello-cargo"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

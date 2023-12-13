@@ -7,7 +7,7 @@
 
 - [Rust Hello World](rlb00_hello-world/README.md)
 
-## [Rust cargo 管理工具](rlb01_hello-cargo/index.md)
+## [rlb01_hello-cargo](rlb01_hello-cargo/index.md)
 
 - [Rust cargo 管理工具](rlb01_hello-cargo/README.md)
 

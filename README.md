@@ -10,4 +10,7 @@
 - [rlb01_hello-cargo](rust-lang-book/rlb01_hello-cargo/index.md)
   - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/README.md)
 
+- [rlb03_guessing-game](rust-lang-book/rlb03_guessing-game/index.md)
+  - [Rust 猜数游戏](rust-lang-book/rlb03_guessing-game/README.md)
+
 - [Rust 程序设计语言](rust-lang-book/README.md)

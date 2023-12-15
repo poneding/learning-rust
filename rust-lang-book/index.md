@@ -11,4 +11,8 @@
 
 - [Rust cargo 管理工具](rlb01_hello-cargo/README.md)
 
+## [rlb03_guessing-game](rlb03_guessing-game/index.md)
+
+- [Rust 猜数游戏](rlb03_guessing-game/README.md)
+
 [Rust 程序设计语言](README.md)

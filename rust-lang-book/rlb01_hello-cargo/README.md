@@ -79,10 +79,10 @@ cargo publish --allow-dirty
 ```bash
 cargo add rand
 
-cargo add rlba01_hello-cargo
+cargo add rlb01_hello-cargo
 
 # 添加本地依赖
-cargo add rlba01_hello-cargo --path ../rlb01_hello-cargo
+cargo add rlb01_hello-cargo --path ../rlb01_hello-cargo
 ```
 
 ## 更新依赖

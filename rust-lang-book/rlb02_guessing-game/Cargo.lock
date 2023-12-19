@@ -62,7 +62,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rlb03_guessing-game"
+name = "rlb02_guessing-game"
 version = "0.1.0"
 dependencies = [
  "rand",

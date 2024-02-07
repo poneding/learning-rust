@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "./overview/r01_hello-world",
+    "./rust-lang-book/rlb01_hello-cargo",
+    "./rust-lang-book/rlb02_guessing-game",
+]

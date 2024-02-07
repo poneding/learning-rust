@@ -24,4 +24,4 @@ check_mdi:
 generate: check_mdi
 	@git pull
 	@echo "Generating README.md..."
-	@mdi -f README.md -t "Learning Rust" -r --override --nav -v
+	@mdi gen -f README.md -t "Learning Rust" -r --override --nav -v

@@ -1,4 +1,4 @@
-fn bool(){
-    let checked=true;
-    println!("checked is {}",checked);
+pub fn bool() {
+    let checked = true;
+    println!("checked is {}", checked);
 }

@@ -95,6 +95,3 @@ cargo run
 ```
 
 可以开始猜数游戏了。
-
----
-[下篇：rlb02_guessing-game](index.md)

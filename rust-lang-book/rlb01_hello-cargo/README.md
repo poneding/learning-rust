@@ -111,6 +111,3 @@ cargo doc
 ```bash
 cargo test
 ```
-
----
-[下篇：rlb01_hello-cargo](index.md)

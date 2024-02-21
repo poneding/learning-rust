@@ -26,6 +26,3 @@ rustc main.rs
 ```bash
 Hello, world!
 ```
-
----
-[下篇：rlb00_hello-world](index.md)

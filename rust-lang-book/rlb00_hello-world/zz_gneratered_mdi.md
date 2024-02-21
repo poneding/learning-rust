@@ -3,5 +3,3 @@
 # rlb00_hello-world
 
 [Rust Hello World](README.md)
-
-[rlb00_hello-world](index.md)

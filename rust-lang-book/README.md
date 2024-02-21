@@ -35,6 +35,3 @@ rustup update
 ```bash
 rustup self uninstall
 ```
-
----
-[下篇：rust-lang-book](index.md)

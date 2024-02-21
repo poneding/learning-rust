@@ -17,7 +17,7 @@ fn os1() {
     // 栈上分配
     let a = 1;
     let b = a; // copy 操作，不存在资源移动
-    println!("a: {}, b: {}", a, b);//
+    println!("a: {}, b: {}", a, b); //
 
     // 堆上分配
     // let v1 = vec!["Vue", "Rust", "Golang"]; // 此时 v1 拥有堆上数据的所有权
@@ -29,7 +29,7 @@ fn os2() {
     let v1 = vec!["Vue", "Rust", "Golang"];
     let v2 = v1;
     show_v(v2); // show_v 中参数v 获得堆上数据所有权，v2 失去所有权
-    // println!("v2: {:?}", v2) // 报错，borrow of moved value: `v2`
+                // println!("v2: {:?}", v2) // 报错，borrow of moved value: `v2`
 }
 
 fn show_v(v: Vec<&str>) {
@@ -47,7 +47,6 @@ fn show_v_2(v: Vec<&str>) -> Vec<&str> {
     println!("v: {:?}", v);
     return v;
 }
-
 
 // 将数据克隆一份，给其他变量使用，自己也不丢失所有权
 fn os_clone() {

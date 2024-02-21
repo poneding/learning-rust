@@ -7,7 +7,6 @@ fn main() {
     create_thread2();
 }
 
-
 fn create_thread() {
     thread::spawn(|| {
         for i in 1..=10 {

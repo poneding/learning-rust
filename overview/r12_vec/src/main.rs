@@ -29,5 +29,3 @@ fn mut_vec(s: &mut [&str]) {
     s[0] = "Vue3";
     println!("in mut_vec s: {:?}", s);
 }
-
-

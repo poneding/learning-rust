@@ -29,7 +29,7 @@ fn closure1() {
     println!("y: {:?}", y);
 
     let v = 100;
-    let add100 = |x| { x + v };
+    let add100 = |x| x + v;
     let z = add100(50);
 
     println!("z: {:?}", z);
@@ -45,8 +45,8 @@ fn closure1() {
 
 // 将闭包当成一个参数传递给函数
 fn closure2<C>(closure: C) -> i32
-    where
-        C: Fn(i32, i32) -> i32, // 注意这里是大写的 Fn
+where
+    C: Fn(i32, i32) -> i32, // 注意这里是大写的 Fn
 {
     return closure(1, 2);
 }

@@ -13,17 +13,16 @@ fn main() {
 
 // 当一个结构体实现了以上的接口后，它就不是普通结构体
 
-
 // Box 指针 可以把数据存储在堆上，而不是栈上。
 // 这就是装箱 box，栈 stack 还是包含指向堆上数据的指针
 fn box1() {
-    let a = 100;// 栈上
-    let b = Box::new(a);// 数据在堆上，指针在栈上
+    let a = 100; // 栈上
+    let b = Box::new(a); // 数据在堆上，指针在栈上
     println!("b: {}", b);
 
     println!("100=a? {}", 100 == a);
     // 访问 Box 存储的数据，使用 *，解引用
-    println!("*b=100? {}", 100 == *b);// *b 是一个智能指针（解引用），指向堆上的数据
+    println!("*b=100? {}", 100 == *b); // *b 是一个智能指针（解引用），指向堆上的数据
 }
 
 // 修改 Box 存储的数据，使用 Deref 的 *mut 子接口，解引用
@@ -45,9 +44,7 @@ struct CustomBox<T> {
 
 impl<T> CustomBox<T> {
     fn new(value: T) -> CustomBox<T> {
-        CustomBox {
-            value
-        }
+        CustomBox { value }
     }
 }
 
@@ -62,7 +59,7 @@ impl<T> Deref for CustomBox<T> {
 
 fn deref1() {
     let ca = 200;
-    let cb = CustomBox::new(ca);// 堆上
+    let cb = CustomBox::new(ca); // 堆上
 
     println!("*cb: {}", *cb);
     println!("200==*cb? {}", 200 == *cb);

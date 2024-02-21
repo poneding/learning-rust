@@ -51,7 +51,7 @@ fn match2() {
     let User {
         // name: name,
         // age: age
-        name,   //如果同名可以简写
+        name, //如果同名可以简写
         age,
     } = u1;
     println!("name: {}, age: {}", name, age);
@@ -60,11 +60,7 @@ fn match2() {
     let u2 = User {
         name: "Jay".to_string(),
         age: 30,
-
     };
-    let User {
-        name,
-        ..
-    } = u2;
+    let User { name, .. } = u2;
     println!("name: {}", name)
 }

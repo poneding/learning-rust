@@ -47,18 +47,19 @@ fn double_price(mut price: i32) {
 }
 
 // 参数 引用传递
-fn double_price2(price2: &mut i32) { // 引用传递在类型前添加 & 符号
+fn double_price2(price2: &mut i32) {
+    // 引用传递在类型前添加 & 符号
     *price2 = *price2 * 2; // * 号用于访问引用地址指向的内存位置上变量的值，称为解引用
     println!("price2 in fn double_price2 is: {}", price2);
 }
 
 // 复合类型如字符串String类型，作为参数传递给函数后，该变量不可再访问
-fn show_name(name:String){
-    println!("Hello, {}",name)
+fn show_name(name: String) {
+    println!("Hello, {}", name)
 }
 
-fn greet(){
-    let name:String=String::from("Jay");
+fn greet() {
+    let name: String = String::from("Jay");
     show_name(name);
-    println!("after show_name: {}",name) //error[E0382]: borrow of moved value: `name`
+    println!("after show_name: {}", name) //error[E0382]: borrow of moved value: `name`
 }

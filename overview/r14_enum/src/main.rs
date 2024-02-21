@@ -48,7 +48,9 @@ fn match_enum() {
     }
 
     let book = Book::Papery { index: 1 };
-    let eb = Book::EBook { url: "www.ebook.com/hello".to_string() };
+    let eb = Book::EBook {
+        url: "www.ebook.com/hello".to_string(),
+    };
     match book {
         Book::Papery { index } => {
             println!("Papery index is {}", index);
@@ -78,10 +80,11 @@ fn match_enum() {
     let s2 = Option::Some(30);
     match s2 {
         // Option::Some(30) => { // YES
-        Option::Some(32) => {   // NO
+        Option::Some(32) => {
+            // NO
             println!("YES")
         }
-        _ => println!("No")
+        _ => println!("No"),
     }
 }
 
@@ -121,7 +124,9 @@ fn if_let() {
         println!("zero");
     }
 
-    let b = Book::EBook { url: "www.ebook.com/hello".to_string() };
+    let b = Book::EBook {
+        url: "www.ebook.com/hello".to_string(),
+    };
     if let Book::Papery { index } = b {
         println!("Papery index is {}", index);
     } else {

@@ -47,7 +47,10 @@ fn remove_file() {
 }
 
 fn append_file() {
-    let mut f = OpenOptions::new().append(true).open("hello.log").expect("append file failed");
+    let mut f = OpenOptions::new()
+        .append(true)
+        .open("hello.log")
+        .expect("append file failed");
     f.write(b"Hello Ding!").expect("write failed");
     println!("append file done.");
 }
@@ -65,6 +68,3 @@ fn read_file() {
     f.read_to_string(&mut contents).unwrap();
     println!("read file: {}", contents);
 }
-
-
-

@@ -11,20 +11,20 @@ fn main() {
 // - 不可恢复的错误 panic!()
 fn err1() {
     panic!("err1");
-    println!("Hello in err1")// 将不会打印 不可恢复
+    println!("Hello in err1") // 将不会打印 不可恢复
 }
 
 fn err2() {
     let arr = vec![1, 2, 3];
-    println!("{}", arr[4]);// 超出索引界限，将会 panic! 不可恢复
-    println!("Hello in err2")// 将不会打印
+    println!("{}", arr[4]); // 超出索引界限，将会 panic! 不可恢复
+    println!("Hello in err2") // 将不会打印
 }
 
 // - 可恢复的异常
 fn err3() {
-    let f = File::open("hello.log");// 文件不存在，返回值 Result.Err
+    let f = File::open("hello.log"); // 文件不存在，返回值 Result.Err
     println!("{:?}", f);
-    println!("Hello in err3")// 将正常打印
+    println!("Hello in err3") // 将正常打印
 }
 
 // unwrap(&self):T

@@ -18,7 +18,6 @@ fn main() {
     let u3 = get_user(String::from("Jack"), 45);
     show_user(u3);
 
-
     let u4 = get_user(String::from("Ding"), 30);
     let u4_age = u4.get_age();
     println!("u4_age: {}", u4_age);
@@ -91,4 +90,3 @@ fn unit_type_struct() {
     let (name, age) = pair;
     println!("name: {:?}, age: {:?}", name, age);
 }
-

@@ -16,7 +16,7 @@ fn str2num() {
 
 // 使用 as 关键字进行显示的类型转换
 fn cast1() {
-    let a = 1;// i32
+    let a = 1; // i32
     let b = a as f64;
     println!("b: {}", b);
 }
@@ -86,41 +86,41 @@ impl From<Student> for Person {
 
 // 字面量
 fn literal() {
-    let a = 1;// i32
-    let b = 1.0;// f64
-    let c = 1.0f32;// f32
-    let d = 1.0f64;// f64
-    let e = 1.0_f32;// f32
-    let f = 1.0_f64;// f64
-    let g = 1.0_f32 as f64;// f64
-    let h = 1.0_f64 as f32;// f32
-    let i = 1.0_f64 as i32;// i32
-    let j = 1.0_f32 as i32;// i32
-    let k = 1.0_f64 as i32;// i32
-    let l = 1.0_f32 as i32;// i32
-    let m = 1.0_f64 as i32;// i32
-    let n = 1.0_f32 as i32;// i32
-    let o = 1.0_f64 as i32;// i32
-    let p = 1.0_f32 as i32;// i32
-    let q = 1.0_f64 as i32;// i32
-    let r = 1.0_f32 as i32;// i32
-    let s = 1.0_f64 as i32;// i32
-    let t = 1.0_f32 as i32;// i32
-    let u = 1.0_f64 as i32;// i32
-    let v = 1.0_f32 as i32;// i32
-    let w = 1.0_f64 as i32;// i32
-    let x = 1.0_f32 as i32;// i32
-    let y = 1.0_f64 as i32;// i32
-    let z = 1.0_f32 as i32;// i32
-    let aa = 1.0_f64 as i32;// i32
-    let bb = 1.0_f32 as i32;// i32
-    let cc = 1.0_f64 as i32;// i32
+    let a = 1; // i32
+    let b = 1.0; // f64
+    let c = 1.0f32; // f32
+    let d = 1.0f64; // f64
+    let e = 1.0_f32; // f32
+    let f = 1.0_f64; // f64
+    let g = 1.0_f32 as f64; // f64
+    let h = 1.0_f64 as f32; // f32
+    let i = 1.0_f64 as i32; // i32
+    let j = 1.0_f32 as i32; // i32
+    let k = 1.0_f64 as i32; // i32
+    let l = 1.0_f32 as i32; // i32
+    let m = 1.0_f64 as i32; // i32
+    let n = 1.0_f32 as i32; // i32
+    let o = 1.0_f64 as i32; // i32
+    let p = 1.0_f32 as i32; // i32
+    let q = 1.0_f64 as i32; // i32
+    let r = 1.0_f32 as i32; // i32
+    let s = 1.0_f64 as i32; // i32
+    let t = 1.0_f32 as i32; // i32
+    let u = 1.0_f64 as i32; // i32
+    let v = 1.0_f32 as i32; // i32
+    let w = 1.0_f64 as i32; // i32
+    let x = 1.0_f32 as i32; // i32
+    let y = 1.0_f64 as i32; // i32
+    let z = 1.0_f32 as i32; // i32
+    let aa = 1.0_f64 as i32; // i32
+    let bb = 1.0_f32 as i32; // i32
+    let cc = 1.0_f64 as i32; // i32
 }
 
 // 类型推断
 fn type_inference() {
-    let mut vec = Vec::new();// 空向量，目前不知道元素类型
-    vec.push(1);// 向量中添加元素，类型推断为 i32
+    let mut vec = Vec::new(); // 空向量，目前不知道元素类型
+    vec.push(1); // 向量中添加元素，类型推断为 i32
     println!("vec: {:?}", vec);
 }
 

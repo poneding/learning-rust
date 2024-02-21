@@ -7,7 +7,6 @@ pub mod chinese {
         hello_again();
     }
 
-
     fn hello_again() {
         println!("再次你好!");
     }

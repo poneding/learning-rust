@@ -55,10 +55,12 @@ fn match_2() {
 
 fn for_1() {
     for num in 1..5 {
+        // 不包含5
         println!("** num is {}", num)
     }
 
     for num in 1..=5 {
+        // 包含5
         println!("-- num is {}", num)
     }
 
@@ -106,6 +108,8 @@ fn while_1() {
     }
 }
 
+// loop 会一直执行，直到遇到 break
+// 适合用于无法在开始时判断是否需要退出，必须在循环体中间某处控制循环的场景
 fn loop_1() {
     let mut num = 1;
     loop {

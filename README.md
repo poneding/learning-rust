@@ -1,5 +1,9 @@
 # Learning Rust
 
+## [programming-rust-book](programming-rust-book/zz_gneratered_mdi.md)
+
+- [Rust 程序设计](programming-rust-book/README.md)
+
 ## [rust-lang-book](rust-lang-book/zz_gneratered_mdi.md)
 
 - [rlb00_hello-world](rust-lang-book/rlb00_hello-world/zz_gneratered_mdi.md)

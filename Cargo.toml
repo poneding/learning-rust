@@ -1,7 +1,11 @@
 [workspace]
+resolver = "2"
 members = [
-    "./overview/r01_hello-world",
-    "./overview/r02_data-type",
-    "./rust-lang-book/rlb01_hello-cargo",
-    "./rust-lang-book/rlb02_guessing-game",
+    "overview/r01_hello-world",
+    "overview/r02_data-type",
+    "overview/r23_mod/demo1",
+    "rust-lang-book/rlb01_hello-cargo",
+    "rust-lang-book/rlb02_guessing-game",
+    "programming-rust-book/prb01_gcd",
+    "programming-rust-book/prb02_iron-gcd",
 ]

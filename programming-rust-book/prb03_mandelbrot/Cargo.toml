@@ -1,0 +1,11 @@
+[package]
+name = "prb03_mandelbrot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pone Ding <poneding@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num = "0.4.0"
+image = "0.13.0"

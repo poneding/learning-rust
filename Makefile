@@ -14,9 +14,6 @@ commit: generate
 check_mdi:
 	@echo "Checking if mdi is installed..."
 	@if ! command -v mdi &> /dev/null; then \
-		echo "mdi is not installed, installing..."; \
-		go install github.com/poneding/mdi@latest; \
-	else \
 		echo "mdi is already installed"; \
 	fi
 

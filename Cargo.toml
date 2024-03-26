@@ -7,5 +7,8 @@ members = [
     "rust-lang-book/rlb01_hello-cargo",
     "rust-lang-book/rlb02_guessing-game",
     "programming-rust-book/prb01_gcd",
-    "programming-rust-book/prb02_iron-gcd", "programming-rust-book/prb03_mandelbrot",
+    "programming-rust-book/prb02_iron-gcd",
+    "programming-rust-book/prb03_mandelbrot",
+    "programming-rust-book/prb04_ownership",
+    "programming-rust-book/prb05_rc", "programming-rust-book/prb021_actix-gcd", "programming-rust-book/prb06_ordering",
 ]

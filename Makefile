@@ -16,8 +16,9 @@ check_mdi:
 	@which mdi > /dev/null && \
 	 echo "mdi is already installed" || \
 	  (echo "mdi is not installed, installing now..."; \
-	  go install github.com/poneding/mdi@latest; \
-	  echo "mdi installed successfully")
+	  go install github.com/poneding/mdi@latest && \
+	  echo "mdi installed successfully" || \
+	  echo "mdi installation failed, please try again later.")
 
 .PHONY: generate
 generate: check_mdi

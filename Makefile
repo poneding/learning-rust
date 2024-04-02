@@ -13,12 +13,7 @@ commit: generate
 .PHONY: check_mdi
 check_mdi:
 	@echo "Checking if mdi is installed..."
-	@(if ! command -v mdi &> /dev/null; then \
-		echo "mdi is not installed, installing..."; \
-		echo "$$?"; \
-	else \
-		echo "mdi is already installed"; \
-	fi)
+	@which mdi > /dev/null && echo "mdi is already installed" || (echo "mdi is not installed, installing now..."; go install github.com/poneding/mdi@latest)
 
 .PHONY: generate
 generate: check_mdi

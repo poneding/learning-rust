@@ -1,3 +1,4 @@
+#[allow(unused)]
 use std::collections::HashMap;
 use std::rc::Rc;
 
@@ -142,10 +143,12 @@ fn _test_smallest() {
     // assert_eq!(s, &10);// not ok: ar2 does not live long enough
 }
 
+#[allow(dead_code)]
 struct StringTable {
     elements: Vec<String>,
 }
 
+#[allow(dead_code)]
 impl StringTable {
     fn find_by_prefix(&self, prefix: &str) -> Option<&String> {
         for i in 0..self.elements.len() {

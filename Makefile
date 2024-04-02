@@ -13,12 +13,12 @@ commit: generate
 .PHONY: check_mdi
 check_mdi:
 	@echo "Checking if mdi is installed..."
-	if ! command -v mdi &> /dev/null; then \
+	@(if ! command -v mdi &> /dev/null; then \
 		echo "mdi is not installed, installing..."; \
 		echo "$$?"; \
 	else \
 		echo "mdi is already installed"; \
-	fi
+	fi)
 
 .PHONY: generate
 generate: check_mdi

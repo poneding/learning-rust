@@ -24,6 +24,7 @@ fn cast1() {
 // 使用 Trait 解决类型转换问题，一般使用到 From 和 Into 两个 Trait
 fn cast2() {
     let s1 = "Hello World!";
+    #[allow(unused)]
     let s2 = String::from(s1);
 
     let s: Student = Student {
@@ -48,6 +49,7 @@ struct Person {
 #[derive(Debug)]
 struct Student {
     name: String,
+    #[allow(unused)]
     grade: u8,
     age: u8,
 }
@@ -85,6 +87,7 @@ impl From<Student> for Person {
 // }
 
 // 字面量
+#[allow(unused)]
 fn literal() {
     let a = 1; // i32
     let b = 1.0; // f64
@@ -118,6 +121,7 @@ fn literal() {
 }
 
 // 类型推断
+#[allow(unused)]
 fn type_inference() {
     let mut vec = Vec::new(); // 空向量，目前不知道元素类型
     vec.push(1); // 向量中添加元素，类型推断为 i32
@@ -125,12 +129,13 @@ fn type_inference() {
 }
 
 // 别名
+#[allow(unused)]
 fn alias() {
-    type myI32 = i32;
-    type myU64 = u64;
-    type hisU64 = u64;
-    let a: myI32 = 1;
-    let b: myU64 = 1;
-    let c: hisU64 = 1;
+    type MyI32 = i32;
+    type MyU64 = u64;
+    type HisU64 = u64;
+    let a: MyI32 = 1;
+    let b: MyU64 = 1;
+    let c: HisU64 = 1;
     println!("b + c = {}", b + c); // 底层同一类型可想加
 }

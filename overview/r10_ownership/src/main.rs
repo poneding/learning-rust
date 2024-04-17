@@ -12,6 +12,7 @@ fn main() {
     os_clone()
 }
 
+#[allow(unused)]
 // os: ownership
 fn os1() {
     // 栈上分配
@@ -25,6 +26,7 @@ fn os1() {
     // println!("{:?}", v1) // 报错，borrow of moved value: `v1`
 }
 
+#[allow(unused)]
 fn os2() {
     let v1 = vec!["Vue", "Rust", "Golang"];
     let v2 = v1;
@@ -32,6 +34,7 @@ fn os2() {
                 // println!("v2: {:?}", v2) // 报错，borrow of moved value: `v2`
 }
 
+#[allow(unused)]
 fn show_v(v: Vec<&str>) {
     println!("v: {:?}", v)
 }
@@ -52,8 +55,9 @@ fn show_v_2(v: Vec<&str>) -> Vec<&str> {
 fn os_clone() {
     let s1 = String::from("Hello");
     let s2 = s1.clone();
+
     let mut s3 = s2.clone();
-    s3 = String::from("Hi");
+    s3.push_str(", Rust");
     println!("s1: {}, s2: {}, s3: {}", s1, s2, s3);
     // println!("s1: {}, s2: {}", s1, s2);
 }

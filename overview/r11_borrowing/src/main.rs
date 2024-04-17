@@ -24,8 +24,7 @@ fn show(v: &Vec<&str>) {
 
 fn show3(v: &mut Vec<&str>) {
     v[0] = "Java";
-    println!("v: {:?}", v);
-    let s1 = Vec::new();
+    println!("in show3 v: {:?}", v);
 }
 
 // 如果要在借用（borrowing）的时候改变变量的值：

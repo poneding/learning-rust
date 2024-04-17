@@ -1,5 +1,5 @@
 .PHONY:
-commit: generate
+commit: generate cargo-sort
 	@echo "Committing changes..."
 	# check if there are any changes, if not, do nothing, otherwise, commit and push
 	@if [ -z "$$(git status --porcelain)" ]; then \
@@ -25,3 +25,10 @@ generate: check_mdi
 	@git pull
 	@echo "Generating README.md..."
 	@mdi gen -f README.md -t "Learning Rust" -r --override --nav -v
+
+.PHONY: cargo-sort
+cargo-sort:
+	@which cargo-sort > /dev/null || \
+		(echo "installing cargo-sort..."; \
+		cargo install cargo-sort)
+	@cargo sort

@@ -1,5 +1,4 @@
 use std::fmt::Display;
-use std::ptr::addr_of_mut;
 
 fn main() {
     println!("Hello, world!");
@@ -20,6 +19,7 @@ fn generic_collection() {
 }
 
 // 特质：Trait
+#[allow(dead_code)]
 struct Book {
     name: String,
     id: u32,
@@ -27,11 +27,11 @@ struct Book {
 }
 
 trait ShowBook {
-    fn Show(&self);
+    fn show(&self);
 }
 
 impl ShowBook for Book {
-    fn Show(&self) {
+    fn show(&self) {
         println!("Book Name: {}, Author: {}", self.name, self.author);
     }
 }
@@ -42,7 +42,7 @@ fn trait_demo() {
         id: 1,
         author: "Jay".to_string(),
     };
-    book.Show();
+    book.show();
 }
 
 // 范型函数
@@ -55,7 +55,7 @@ impl Display for Book {
     //     write!(f, "--- Book Name: {}, Author: {}", self.name, self.author)
     // }
 
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, _: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         println!("*** Book Name: {}, Author: {}", self.name, self.author);
         let r = Result::Ok(());
         return r;

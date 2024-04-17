@@ -16,3 +16,85 @@
   - [Rust 猜数游戏](rust-lang-book/rlb02_guessing-game/README.md)
 
 - [Rust 程序设计语言](rust-lang-book/README.md)
+
+## [rustlings](rustlings/zz_gneratered_mdi.md)
+
+- [exercises](rustlings/exercises/zz_gneratered_mdi.md)
+  - [clippy](rustlings/exercises/clippy/zz_gneratered_mdi.md)
+    - [Clippy](rustlings/exercises/clippy/README.md)
+
+  - [conversions](rustlings/exercises/conversions/zz_gneratered_mdi.md)
+    - [Type conversions](rustlings/exercises/conversions/README.md)
+
+  - [enums](rustlings/exercises/enums/zz_gneratered_mdi.md)
+    - [Enums](rustlings/exercises/enums/README.md)
+
+  - [error_handling](rustlings/exercises/error_handling/zz_gneratered_mdi.md)
+    - [Error handling](rustlings/exercises/error_handling/README.md)
+
+  - [functions](rustlings/exercises/functions/zz_gneratered_mdi.md)
+    - [Functions](rustlings/exercises/functions/README.md)
+
+  - [generics](rustlings/exercises/generics/zz_gneratered_mdi.md)
+    - [Generics](rustlings/exercises/generics/README.md)
+
+  - [hashmaps](rustlings/exercises/hashmaps/zz_gneratered_mdi.md)
+    - [Hashmaps](rustlings/exercises/hashmaps/README.md)
+
+  - [if](rustlings/exercises/if/zz_gneratered_mdi.md)
+    - [If](rustlings/exercises/if/README.md)
+
+  - [intro](rustlings/exercises/intro/zz_gneratered_mdi.md)
+    - [Intro](rustlings/exercises/intro/README.md)
+
+  - [iterators](rustlings/exercises/iterators/zz_gneratered_mdi.md)
+    - [Iterators](rustlings/exercises/iterators/README.md)
+
+  - [lifetimes](rustlings/exercises/lifetimes/zz_gneratered_mdi.md)
+    - [Lifetimes](rustlings/exercises/lifetimes/README.md)
+
+  - [macros](rustlings/exercises/macros/zz_gneratered_mdi.md)
+    - [Macros](rustlings/exercises/macros/README.md)
+
+  - [modules](rustlings/exercises/modules/zz_gneratered_mdi.md)
+    - [Modules](rustlings/exercises/modules/README.md)
+
+  - [move_semantics](rustlings/exercises/move_semantics/zz_gneratered_mdi.md)
+    - [Move Semantics](rustlings/exercises/move_semantics/README.md)
+
+  - [options](rustlings/exercises/options/zz_gneratered_mdi.md)
+    - [Options](rustlings/exercises/options/README.md)
+
+  - [primitive_types](rustlings/exercises/primitive_types/zz_gneratered_mdi.md)
+    - [Primitive Types](rustlings/exercises/primitive_types/README.md)
+
+  - [smart_pointers](rustlings/exercises/smart_pointers/zz_gneratered_mdi.md)
+    - [Smart Pointers](rustlings/exercises/smart_pointers/README.md)
+
+  - [strings](rustlings/exercises/strings/zz_gneratered_mdi.md)
+    - [Strings](rustlings/exercises/strings/README.md)
+
+  - [structs](rustlings/exercises/structs/zz_gneratered_mdi.md)
+    - [Structs](rustlings/exercises/structs/README.md)
+
+  - [tests](rustlings/exercises/tests/zz_gneratered_mdi.md)
+    - [Tests](rustlings/exercises/tests/README.md)
+
+  - [threads](rustlings/exercises/threads/zz_gneratered_mdi.md)
+    - [Threads](rustlings/exercises/threads/README.md)
+
+  - [traits](rustlings/exercises/traits/zz_gneratered_mdi.md)
+    - [Traits](rustlings/exercises/traits/README.md)
+
+  - [variables](rustlings/exercises/variables/zz_gneratered_mdi.md)
+    - [Variables](rustlings/exercises/variables/README.md)
+
+  - [vecs](rustlings/exercises/vecs/zz_gneratered_mdi.md)
+    - [Vectors](rustlings/exercises/vecs/README.md)
+
+  - [Exercise to Book Chapter mapping](rustlings/exercises/README.md)
+
+- [AUTHORS.md](rustlings/AUTHORS.md)
+- [CHANGELOG.md](rustlings/CHANGELOG.md)
+- [CONTRIBUTING.md](rustlings/CONTRIBUTING.md)
+- [rustlings 🦀❤️](rustlings/README.md)

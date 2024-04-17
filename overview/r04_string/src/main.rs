@@ -1,6 +1,7 @@
 fn main() {
     // &str: 字符串字面量，编译时就知道值的字符串类型，是字符char的集合，静态
     // String: 字符串对象，pub 结构体，存储在堆上
+    #[allow(unused_variables)]
     let name = "Jay";
 
     let s1 = String::new();
@@ -17,7 +18,7 @@ fn main() {
     s3.push_str("World");
     println!("s3: {}", s3);
 
-    let mut s4 = String::from("Hello Jay");
+    let s4 = String::from("Hello Jay");
     let result = s4.replace("Jay", "周杰伦");
     println!("result: {}", result);
 

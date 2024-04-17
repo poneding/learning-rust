@@ -1,18 +1,18 @@
 fn main() {
     let u = User {
-        Name: String::from("Jay"),
-        Age: 18,
+        name: String::from("Jay"),
+        age: 18,
     };
     println!("u: {:?}", u);
-    println!("u.Name: {}, u.Age: {}", u.Name, u.Age);
+    println!("u.Name: {}, u.Age: {}", u.name, u.age);
 
     // 默认结构体变量也是不可修改的
     let mut u2 = User {
-        Name: String::from("Ding"),
-        Age: 30,
+        name: String::from("Ding"),
+        age: 30,
     };
-    u2.Name = String::from("Ding Peng");
-    u2.Age = 31;
+    u2.name = String::from("Ding Peng");
+    u2.age = 31;
     println!("u2: {:?}", u2);
 
     let u3 = get_user(String::from("Jack"), 45);
@@ -34,14 +34,14 @@ fn main() {
     unit_type_struct();
 }
 
-// 元组结构体
+#[allow(dead_code)] // 元组结构体
 struct Pair(String, i32);
 
 // 如果要使用 {:?} 格式化输出，需要在结构体名称前加上 #[derive(Debug)]。
 #[derive(Debug)]
 struct User {
-    Name: String,
-    Age: i32,
+    name: String,
+    age: i32,
 }
 
 // 结构体做参数
@@ -52,8 +52,8 @@ fn show_user(u: User) {
 // 结构体作为返回值
 fn get_user(name: String, age: i32) -> User {
     return User {
-        Name: name,
-        Age: age,
+        name: name,
+        age: age,
     };
 }
 
@@ -62,21 +62,18 @@ impl User {
     // &self 表示当前结构体的实例。
     // &self 也是结构体普通方法固定的第一个参数，其他参数可选。
     fn get_age(&self) -> i32 {
-        return self.Age;
+        return self.age;
     }
     fn get_name(&self) -> &str {
         // 报错: value borrowed here after move
-        return self.Name.as_str();
+        return self.name.as_str();
     }
 }
 
 // 结构体静态方法
 impl User {
     fn get_user_static(name: String, age: i32) -> User {
-        return User {
-            Name: name,
-            Age: age,
-        };
+        return User { name, age };
     }
 }
 

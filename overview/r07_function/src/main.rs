@@ -16,7 +16,7 @@ fn main() {
     let mut price2 = 199;
     double_price2(&mut price2);
     println!("price2 out fn double_price2 is: {}", price2);
-    // greet();
+    greet();
 }
 
 fn hello() {
@@ -54,12 +54,12 @@ fn double_price2(price2: &mut i32) {
 }
 
 // 复合类型如字符串String类型，作为参数传递给函数后，该变量不可再访问
-fn show_name(name: String) {
+fn show_name(name: &String) {
     println!("Hello, {}", name)
 }
 
 fn greet() {
     let name: String = String::from("Jay");
-    show_name(name);
-    println!("after show_name: {}", name) //error[E0382]: borrow of moved value: `name`
+    show_name(&name);
+    println!("after show_name: {}", name);
 }

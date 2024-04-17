@@ -1,13 +1,22 @@
-pub struct CacheB {}
+use std::collections::HashMap;
+pub struct CacheB {
+    m: HashMap<String, String>,
+}
 
 impl CacheB {
     pub fn new() -> CacheB {
-        CacheB {}
+        CacheB { m: HashMap::new() }
     }
 
-    pub fn get(&self, key: String) -> String {
-        return "".to_string();
+    #[allow(unused)]
+    pub fn get(&self, key: &str) -> &str {
+        match self.m.get(key) {
+            Some(v) => v.as_str(),
+            None => "",
+        }
     }
 
-    pub fn set(&self, key: String, value: String) {}
+    pub fn set(&mut self, key: &str, value: &str) {
+        self.m.insert(key.into(), value.into());
+    }
 }

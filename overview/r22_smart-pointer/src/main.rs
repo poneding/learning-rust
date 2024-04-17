@@ -34,6 +34,7 @@ fn box2() {
     println!("c2: {}", c2);
 
     let mut d = Box::new(100);
+    println!("d: {}", d);
     d = Box::new(200);
     println!("d: {}", d);
 }

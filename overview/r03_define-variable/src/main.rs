@@ -1,3 +1,4 @@
+#[allow(unused)]
 fn main() {
     // 1. 变量区分大小写
     // 2. 必须以字母或下划线开头，不能以数字开头
@@ -40,6 +41,7 @@ fn static_var() {
     // println!("NAME2 is {}",NAME2)
 }
 
+#[allow(unused)]
 fn hide_var() {
     // 变量的隐藏
     let age = 10;

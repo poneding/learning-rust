@@ -9,8 +9,8 @@ fn main() {
     english::hello();
 
     let mut ca = cachea::CacheA::new();
-    ca.set(String::from("key"), String::from("value"));
+    ca.set("k1", "v1");
 
     let mut cb = cacheb::cacheb::CacheB::new();
-    cb.set(String::from("key"), String::from("value"));
+    cb.set("k2", "v2");
 }

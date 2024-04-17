@@ -19,6 +19,7 @@ fn main() {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Weekday {
     Monday,
     Tuesday,
@@ -48,6 +49,7 @@ fn match_enum() {
     }
 
     let book = Book::Papery { index: 1 };
+    #[allow(unused_variables)]
     let eb = Book::EBook {
         url: "www.ebook.com/hello".to_string(),
     };

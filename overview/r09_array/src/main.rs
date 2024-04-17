@@ -6,6 +6,7 @@ fn main() {
     let arr1: [&str; 2] = ["Hello", "Jay"];
     let arr2 = [1, 2, 3, 4, 5];
 
+    #[allow(unused_variables)]
     let arr3: [i32; 3] = [60; 3]; // 默认值 60
 
     // len

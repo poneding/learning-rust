@@ -1,4 +1,4 @@
-[Learning Rust](../../README.md) / [rust-lang-book](../zz_gneratered_mdi.md) / [rlb01_hello-cargo](zz_gneratered_mdi.md) / Rust cargo 管理工具
+[Learning Rust](../../README.md) / [rust-lang-book](../zz_generated_mdi.md) / [rlb01_hello-cargo](zz_generated_mdi.md) / Rust cargo 管理工具
 
 # Rust cargo 管理工具
 

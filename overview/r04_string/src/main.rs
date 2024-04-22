@@ -28,7 +28,11 @@ fn main() {
 
     // String 转 &str
     let s = String::from("Halo");
-    show_name(s.as_str());
+    // 第一种
+    show_name(&s);
+    // show_name(&s[..]);
+    // 第二种
+    // show_name(s.as_str());
 
     str_trim();
 

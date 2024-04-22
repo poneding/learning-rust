@@ -1,4 +1,4 @@
-[Learning Rust](../../README.md) / [rust-lang-book](../zz_gneratered_mdi.md) / [rlb02_guessing-game](zz_gneratered_mdi.md) / Rust 猜数游戏
+[Learning Rust](../../README.md) / [rust-lang-book](../zz_generated_mdi.md) / [rlb02_guessing-game](zz_generated_mdi.md) / Rust 猜数游戏
 
 # Rust 猜数游戏
 

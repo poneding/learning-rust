@@ -1,7 +1,5 @@
 [workspace]
 members = [
-    "by-example/e01_print",
-    "by-example/e02_primitives",
     "overview/r01_hello-world",
     "overview/r02_data-type",
     "overview/r03_define-variable",
@@ -37,6 +35,9 @@ members = [
     "programming-rust-book/prb04_ownership",
     "programming-rust-book/prb05_rc",
     "programming-rust-book/prb06_ordering",
+    "rust-by-example/e01_print",
+    "rust-by-example/e02_primitives",
+    "rust-exercises/gigasecond",
     "rust-exercises/hello-world",
     "rust-exercises/reverse-string",
     "rust-lang-book/rlb01_hello-cargo",
@@ -44,6 +45,10 @@ members = [
     "rust-lang-book/rlb03_variables",
     "rust-lang-book/rlb04_ownership",
     "rust-lang-book/rlb05_structs",
+    "rust-lang-book/rlb06_enums",
+    "rust-lang-book/rlb07_options",
+    "rust-lang-book/rlb08_hashmap",
+    "rust-lang-book/rlb09_errors", "rust-lang-book/rlb10_generics", "rust-lang-book/rlb11_traits", "rust-lang-book/rlb12_lifetime",
     "rustlings",
 ]
 

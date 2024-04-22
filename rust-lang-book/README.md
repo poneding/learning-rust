@@ -1,4 +1,4 @@
-[Learning Rust](../README.md) / [rust-lang-book](zz_gneratered_mdi.md) / Rust 程序设计语言
+[Learning Rust](../README.md) / [rust-lang-book](zz_generated_mdi.md) / Rust 程序设计语言
 
 # Rust 程序设计语言
 

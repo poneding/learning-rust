@@ -1,4 +1,4 @@
-[Learning Rust](../../README.md) / [rust-lang-book](../zz_gneratered_mdi.md) / [rlb00_hello-world](zz_gneratered_mdi.md) / Rust Hello World
+[Learning Rust](../../README.md) / [rust-lang-book](../zz_generated_mdi.md) / [rlb00_hello-world](zz_generated_mdi.md) / Rust Hello World
 
 # Rust Hello World
 

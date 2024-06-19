@@ -52,7 +52,7 @@ members = [
     "rust-lang-book/rlb10_generics",
     "rust-lang-book/rlb11_traits",
     "rust-lang-book/rlb12_lifetime",
-    "trpl/ch17-01-what-is-oo",
+    "trpl/ch17-01-what-is-oo", "trpl/ch17-02-trait-objects",
     # "rustlings",
 ]
 

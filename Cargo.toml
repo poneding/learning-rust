@@ -48,8 +48,12 @@ members = [
     "rust-lang-book/rlb06_enums",
     "rust-lang-book/rlb07_options",
     "rust-lang-book/rlb08_hashmap",
-    "rust-lang-book/rlb09_errors", "rust-lang-book/rlb10_generics", "rust-lang-book/rlb11_traits", "rust-lang-book/rlb12_lifetime",
-    "rustlings",
+    "rust-lang-book/rlb09_errors",
+    "rust-lang-book/rlb10_generics",
+    "rust-lang-book/rlb11_traits",
+    "rust-lang-book/rlb12_lifetime",
+    "trpl/ch17-01-what-is-oo",
+    # "rustlings",
 ]
 
 resolver = "2"

@@ -4,6 +4,10 @@
 
 - [Rust 程序设计](programming-rust-book/README.md)
 
+## [rbt](rbt/zz_generated_mdi.md)
+
+- [rbt](rbt/README.md)
+
 ## [rust-lang-book](rust-lang-book/zz_generated_mdi.md)
 
 - [rlb00_hello-world](rust-lang-book/rlb00_hello-world/zz_generated_mdi.md)
@@ -98,3 +102,7 @@
 - [CHANGELOG.md](rustlings/CHANGELOG.md)
 - [CONTRIBUTING.md](rustlings/CONTRIBUTING.md)
 - [rustlings 🦀❤️](rustlings/README.md)
+
+## [trpl](trpl/zz_generated_mdi.md)
+
+- [trpl](trpl/README.md)

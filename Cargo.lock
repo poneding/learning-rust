@@ -646,11 +646,35 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "ch04-02-references-and-borrowing"
+version = "0.1.0"
+
+[[package]]
+name = "ch04-03-slices"
+version = "0.1.0"
+
+[[package]]
+name = "ch16-01-threads"
+version = "0.1.0"
+
+[[package]]
+name = "ch16-02-message-passing"
+version = "0.1.0"
+
+[[package]]
+name = "ch16-03-shared-state"
+version = "0.1.0"
+
+[[package]]
 name = "ch17-01-what-is-oo"
 version = "0.1.0"
 
 [[package]]
 name = "ch17-02-trait-objects"
+version = "0.1.0"
+
+[[package]]
+name = "ch17-03-oo-design-patterns"
 version = "0.1.0"
 
 [[package]]
@@ -1644,6 +1668,10 @@ dependencies = [
  "memchr",
  "minimal-lexical",
 ]
+
+[[package]]
+name = "non_standard_input"
+version = "0.1.0"
 
 [[package]]
 name = "noop_proc_macro"
@@ -2758,6 +2786,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "three_and_a_bit"
+version = "0.1.0"
+
+[[package]]
 name = "tiff"
 version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2915,6 +2947,10 @@ name = "traitobject"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "efd1f82c56340fdf16f2a953d7bda4f8fdffba13d93b00844c25572110b26079"
+
+[[package]]
+name = "type_conversion"
+version = "0.1.0"
 
 [[package]]
 name = "typeable"

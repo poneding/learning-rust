@@ -654,6 +654,14 @@ name = "ch04-03-slices"
 version = "0.1.0"
 
 [[package]]
+name = "ch05-02-example-structs"
+version = "0.1.0"
+
+[[package]]
+name = "ch05-03-method-syntax"
+version = "0.1.0"
+
+[[package]]
 name = "ch16-01-threads"
 version = "0.1.0"
 

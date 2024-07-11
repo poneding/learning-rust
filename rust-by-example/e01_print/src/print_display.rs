@@ -3,6 +3,7 @@ use std::fmt;
 
 // 定义一个结构体，咱们会为它实现 `fmt::Display`。以下是个简单的元组结构体
 // `Structure`，包含一个 `i32` 元素。
+#[allow(unused)]
 struct Structure(i32);
 
 // 为了使用 `{}` 标记，必须手动为类型实现 `fmt::Display` trait。
@@ -43,14 +44,14 @@ impl fmt::Display for Point2D {
 }
 
 #[derive(Debug)]
-struct Complex{
+struct Complex {
     real: f64,
     image: f64,
 }
 
-impl fmt::Display for Complex{
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result{
-        write!(f,"{} + {}i",self.real,self.image)
+impl fmt::Display for Complex {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{} + {}i", self.real, self.image)
     }
 }
 // ? 操作符：如果是 Ok 则返回 Ok 中的值，如果是 Err 则直接返回 Err
@@ -68,7 +69,9 @@ impl fmt::Display for List {
         for (count, v) in vec.iter().enumerate() {
             // 对每个元素（第一个元素除外）加上逗号。
             // 使用 `?` 或 `try!` 来返回错误。
-            if count != 0 { write!(f, ", ")?; }
+            if count != 0 {
+                write!(f, ", ")?;
+            }
             // write!(f, "{}", v)?;
             write!(f, "{0}: {1}", count, v)?;
         }
@@ -85,12 +88,14 @@ pub fn run_print_display() {
     println!("Display: {}", minmax);
     println!("Debug: {:?}", minmax);
 
-    let big_range =   MinMax(-300, 300);
+    let big_range = MinMax(-300, 300);
     let small_range = MinMax(-3, 3);
 
-    println!("The big range is {big} and the small is {small}",
-             small = small_range,
-             big = big_range);
+    println!(
+        "The big range is {big} and the small is {small}",
+        small = small_range,
+        big = big_range
+    );
 
     let point = Point2D { x: 3.3, y: 7.2 };
 
@@ -98,10 +103,13 @@ pub fn run_print_display() {
     println!("Display: {}", point);
     println!("Debug: {:?}", point);
 
-    let complex = Complex{real:3.3,image:7.2};
+    let complex = Complex {
+        real: 3.3,
+        image: 7.2,
+    };
     println!("Compare complex:");
-    println!("Display: {}",complex);
-    println!("Debug: {:?}",complex);
+    println!("Display: {}", complex);
+    println!("Debug: {:?}", complex);
 
     // 报错。`Debug` 和 `Display` 都被实现了，但 `{:b}` 需要 `fmt::Binary`
     // 得到实现。这语句不能运行。
@@ -110,4 +118,3 @@ pub fn run_print_display() {
     let v = List(vec![1, 2, 3]);
     println!("{}", v);
 }
-

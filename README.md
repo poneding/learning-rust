@@ -1,5 +1,10 @@
 # Learning Rust
 
+## [in-action](in-action/zz_generated_mdi.md)
+
+- [ssher](in-action/ssher/zz_generated_mdi.md)
+  - [ssher](in-action/ssher/README.md)
+
 ## [programming-rust-book](programming-rust-book/zz_generated_mdi.md)
 
 - [Rust 程序设计](programming-rust-book/README.md)
@@ -7,19 +12,6 @@
 ## [rbt](rbt/zz_generated_mdi.md)
 
 - [rbt](rbt/README.md)
-
-## [rust-lang-book](rust-lang-book/zz_generated_mdi.md)
-
-- [rlb00_hello-world](rust-lang-book/rlb00_hello-world/zz_generated_mdi.md)
-  - [Rust Hello World](rust-lang-book/rlb00_hello-world/README.md)
-
-- [rlb01_hello-cargo](rust-lang-book/rlb01_hello-cargo/zz_generated_mdi.md)
-  - [Rust cargo 管理工具](rust-lang-book/rlb01_hello-cargo/README.md)
-
-- [rlb02_guessing-game](rust-lang-book/rlb02_guessing-game/zz_generated_mdi.md)
-  - [Rust 猜数游戏](rust-lang-book/rlb02_guessing-game/README.md)
-
-- [Rust 程序设计语言](rust-lang-book/README.md)
 
 ## [rustlings](rustlings/zz_generated_mdi.md)
 
@@ -103,6 +95,21 @@
 - [CONTRIBUTING.md](rustlings/CONTRIBUTING.md)
 - [rustlings 🦀❤️](rustlings/README.md)
 
-## [trpl](trpl/zz_generated_mdi.md)
+## [the-rust-programming-language](the-rust-programming-language/zz_generated_mdi.md)
 
-- [trpl](trpl/README.md)
+- [ch01-02-hello-world](the-rust-programming-language/ch01-02-hello-world/zz_generated_mdi.md)
+  - [Rust Hello World](the-rust-programming-language/ch01-02-hello-world/README.md)
+
+- [ch01-03-hello-cargo](the-rust-programming-language/ch01-03-hello-cargo/zz_generated_mdi.md)
+  - [Rust cargo 管理工具](the-rust-programming-language/ch01-03-hello-cargo/README.md)
+
+- [ch02-00-guessing-game-tutorial](the-rust-programming-language/ch02-00-guessing-game-tutorial/zz_generated_mdi.md)
+  - [Rust 猜数游戏](the-rust-programming-language/ch02-00-guessing-game-tutorial/README.md)
+
+- [the-rust-programming-language](the-rust-programming-language/README.md)
+
+## [the-rustonomicon](the-rustonomicon/zz_generated_mdi.md)
+
+- [the-rustonomicon](the-rustonomicon/README.md)
+
+[Rust 学习笔记](LEARNING_NOTES.md)

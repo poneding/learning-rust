@@ -2,6 +2,9 @@
 name = "ssher"
 version = "0.1.0"
 edition = "2021"
+description = "A simple SSH client written in Rust"
+authors = ["Pone Ding <poneding@gmail.com>"]
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -9,4 +12,4 @@ edition = "2021"
 structopt = "0.3"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-dialoguer = "0.6.2"
+dialoguer = "0.11.0"

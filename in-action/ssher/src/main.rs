@@ -1,9 +1,10 @@
 use dialoguer::Select;
 use serde::{Deserialize, Serialize};
+use std::ffi::OsStr;
 use std::fs::File;
-use std::io::prelude::*;
+use std::io::Write;
 use std::path::Path;
-use std::process::Command;
+use std::process::{Command, Stdio};
 use structopt::StructOpt;
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -11,6 +12,7 @@ struct SSHProfile {
     name: String,
     host: String,
     user: String,
+    identity_file: String,
 }
 
 #[derive(StructOpt)]
@@ -25,6 +27,7 @@ enum CommandType {
         name: String,
         host: String,
         user: String,
+        identity_file: String,
     },
 }
 
@@ -32,8 +35,18 @@ fn main() {
     let args = Cli::from_args();
 
     match args.command {
-        Some(CommandType::Save { name, host, user }) => {
-            let profile = SSHProfile { name, host, user };
+        Some(CommandType::Save {
+            name,
+            host,
+            user,
+            identity_file,
+        }) => {
+            let profile = SSHProfile {
+                name,
+                host,
+                user,
+                identity_file,
+            };
 
             let mut profiles = if Path::new("profiles.json").exists() {
                 let file = File::open("profiles.json").unwrap();
@@ -69,8 +82,15 @@ fn main() {
             let profile = &profiles[selection];
             Command::new("ssh")
                 .arg(format!("{}@{}", profile.user, profile.host))
+                .arg("-i")
+                .arg(OsStr::new(&profile.identity_file))
+                .stdin(Stdio::inherit())
+                .stdout(Stdio::inherit())
+                .stderr(Stdio::inherit())
                 .spawn()
-                .expect("SSH command failed to start");
+                .expect("SSH command failed to start")
+                .wait()
+                .expect("Failed to wait on child process.");
         }
     }
 }

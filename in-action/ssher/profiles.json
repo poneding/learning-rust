@@ -1,1 +1,8 @@
-[{"name":"cloud","host":"cloud","user":"root"}]
+[
+    {
+        "name": "ucloud",
+        "host": "ucloud.io",
+        "user": "ubuntu",
+        "identity_file": "~/.ssh/id_rsa"
+    }
+]

@@ -12,6 +12,7 @@ struct SSHProfile {
     name: String,
     host: String,
     user: String,
+    password: String,
     identity_file: String,
 }
 
@@ -27,6 +28,7 @@ enum CommandType {
         name: String,
         host: String,
         user: String,
+        password: String,
         identity_file: String,
     },
 }
@@ -39,12 +41,14 @@ fn main() {
             name,
             host,
             user,
+            password,
             identity_file,
         }) => {
             let profile = SSHProfile {
                 name,
                 host,
                 user,
+                password,
                 identity_file,
             };
 

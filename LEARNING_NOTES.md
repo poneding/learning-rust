@@ -4,9 +4,11 @@
 
 ## 测试
 
-`mod` 上方的 `cfg(test)` 注解表示该模块仅在测试时编译。
+1、`mod` 上方的 `cfg(test)` 注解是为了让编译器仅在 cargo test 时才编译，cargo build 时无需编译。
 
-函数上方的 `#[test]` 注解表示该函数是一个测试函数，通过 `#[ignore]` 注解可以忽略该测试。
+2、函数上方的 `#[test]` 注解表示该函数是一个测试函数，通过 `#[ignore]` 注解可以忽略该测试。
+
+3、#[should_panic] 注解表示该测试函数应该 panic，可以指定 panic 的信息，如 `#[should_panic(expected = "oops")]`。
 
 ```rust
 cargo test
@@ -31,5 +33,4 @@ cargo test -- --include-ignored
 
 # 运行所有测试
 cargo test --all
-
 ```

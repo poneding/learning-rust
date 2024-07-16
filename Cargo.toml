@@ -2,7 +2,7 @@
 members = [
     "a-half-hour-to-learn-rust/function-types-closures",
     "a-half-hour-to-learn-rust/loops-iterators",
-    "a-half-hour-to-learn-rust/returning-closures",
+    "a-half-hour-to-learn-rust/returning-closures", "in-action/minigrep",
     "in-action/ssher",
     "overview/r01_hello-world",
     "overview/r02_data-type",
@@ -47,6 +47,7 @@ members = [
     "rust-exercises/gigasecond",
     "rust-exercises/hello-world",
     "rust-exercises/reverse-string",
+    "rustlings",
     "the-rust-programming-language/ch01-03-hello-cargo",
     "the-rust-programming-language/ch02-00-guessing-game-tutorial",
     "the-rust-programming-language/ch03-05-control-flow",
@@ -62,14 +63,15 @@ members = [
     "the-rust-programming-language/ch07-02-defining-modules-to-control-scope-and-privacy/backyard",
     "the-rust-programming-language/ch07-02-defining-modules-to-control-scope-and-privacy/restaurant",
     "the-rust-programming-language/ch07-02-defining-modules-to-control-scope-and-privacy/restaurant_v2",
-    "the-rust-programming-language/ch08-00-common-collections", "the-rust-programming-language/ch08-02-strings", "the-rust-programming-language/ch08-03-hash-maps",
+    "the-rust-programming-language/ch08-00-common-collections",
+    "the-rust-programming-language/ch08-02-strings",
+    "the-rust-programming-language/ch08-03-hash-maps", "the-rust-programming-language/ch11-01-writing-tests/adder",
     "the-rust-programming-language/ch16-01-threads",
     "the-rust-programming-language/ch16-02-message-passing",
     "the-rust-programming-language/ch16-03-shared-state",
     "the-rust-programming-language/ch17-01-what-is-oo",
     "the-rust-programming-language/ch17-02-trait-objects",
     "the-rust-programming-language/ch17-03-oo-design-patterns",
-    # "rustlings",
 ]
 
 resolver = "2"

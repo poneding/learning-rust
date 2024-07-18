@@ -1,3 +1,34 @@
+//! # ssher
+//!
+//! `ssher` 一个简易的连接远程服务器命令行工具，使用 Rust 语言实现。
+//!
+//! ## 安装
+//!
+//! ```bash
+//! cargo install ssher
+//! ```
+//!
+//! ## 使用
+//!
+//! 首先，配置 `profiles.json` 文件，参考格式：
+//!
+//! ```json
+//! [
+//!   {
+//!     "name": "cloud-server",
+//!     "host": "10.1.1.10",
+//!     "user": "ubuntu",
+//!     "identity_file": "~/.ssh/id_rsa"
+//!   }
+//! ]
+//! ```
+//!
+//! 使用 `ssher` 命令行工具选择服务器并连接：
+//!
+//! ```bash
+//! ssher
+//! ```
+
 use dialoguer::Select;
 use serde::{Deserialize, Serialize};
 use std::ffi::OsStr;
@@ -12,7 +43,6 @@ struct SSHProfile {
     name: String,
     host: String,
     user: String,
-    password: String,
     identity_file: String,
 }
 
@@ -28,7 +58,6 @@ enum CommandType {
         name: String,
         host: String,
         user: String,
-        password: String,
         identity_file: String,
     },
 }
@@ -41,14 +70,12 @@ fn main() {
             name,
             host,
             user,
-            password,
             identity_file,
         }) => {
             let profile = SSHProfile {
                 name,
                 host,
                 user,
-                password,
                 identity_file,
             };
 

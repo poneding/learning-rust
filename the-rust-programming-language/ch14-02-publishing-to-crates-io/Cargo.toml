@@ -1,0 +1,8 @@
+[package]
+name = "ch14-02-publishing-to-crates-io"
+version = "0.1.0"
+edition = "2021"
+description = "A sample project to demonstrate how to publish a crate to crates.io"
+license = "MIT OR Apache-2.0"
+
+[dependencies]

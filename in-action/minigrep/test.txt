@@ -1,1 +1,3 @@
-Hello, rust!
+Rust:
+safe, fast, productive.
+Trust me.

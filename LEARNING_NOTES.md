@@ -2,6 +2,41 @@
 
 # Rust 学习笔记
 
+## 格式化打印
+
+- 实现 `std::fmt::Display` trait，实现 `fmt` 方法，可以使用 `{}` 占位符。
+- 使用 `#[derive(Debug)]` 注解，实现 `std::fmt::Debug` trait，可以使用 `{:?}` 或 `{#?}` 占位符。
+
+```rust
+use std::fmt;
+
+#[derive(Debug)]
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl fmt::Display for Point {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
+fn main() {
+    let point = Point { x: 10, y: 20 };
+    println!("{}", point); // 正常输出: (10, 20)
+    println!("{:?}", point); // 编译错误: `Point` doesn't implement `Debug`
+}
+```
+
+## 重导出
+
+```rust
+pub use self::kinds::PrimaryColor;
+pub use self::kinds::SecondaryColor;
+pub use self::utils::mix;
+```
+
 ## 测试
 
 1、`mod` 上方的 `cfg(test)` 注解是为了让编译器仅在 cargo test 时才编译，cargo build 时无需编译。

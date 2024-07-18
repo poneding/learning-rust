@@ -1,0 +1,8 @@
+[package]
+name = "ch14-03-cargo-workspaces"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# ch14-02-publishing-to-crates-io = "0.1.0"
+ch14-02-publishing-to-crates-io = { path = "../ch14-02-publishing-to-crates-io" }

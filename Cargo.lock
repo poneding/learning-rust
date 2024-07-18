@@ -818,6 +818,29 @@ name = "ch08-03-hash-maps"
 version = "0.1.0"
 
 [[package]]
+name = "ch13-01-closures"
+version = "0.1.0"
+
+[[package]]
+name = "ch13-02-iterators"
+version = "0.1.0"
+
+[[package]]
+name = "ch14-01-release-profiles"
+version = "0.1.0"
+
+[[package]]
+name = "ch14-02-publishing-to-crates-io"
+version = "0.1.0"
+
+[[package]]
+name = "ch14-03-cargo-workspaces"
+version = "0.1.0"
+dependencies = [
+ "ch14-02-publishing-to-crates-io",
+]
+
+[[package]]
 name = "ch16-01-threads"
 version = "0.1.0"
 
@@ -3290,7 +3313,7 @@ dependencies = [
 
 [[package]]
 name = "ssher"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "dialoguer",
  "serde",

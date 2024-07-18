@@ -1,8 +1,8 @@
 [package]
 name = "ssher"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-description = "A simple SSH client written in Rust"
+description = "ssher 一个简易的连接远程服务器命令行工具，使用 Rust 语言实现。"
 authors = ["Pone Ding <poneding@gmail.com>"]
 license = "MIT"
 

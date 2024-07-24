@@ -5,7 +5,7 @@
 ## 格式化打印
 
 - 实现 `std::fmt::Display` trait，实现 `fmt` 方法，可以使用 `{}` 占位符。
-- 使用 `#[derive(Debug)]` 注解，实现 `std::fmt::Debug` trait，可以使用 `{:?}` 或 `{#?}` 占位符。
+- 使用 `#[derive(Debug)]` 注解，实现 `std::fmt::Debug` trait，可以使用 `{:?}` 或 `{:#?}` 占位符。
 
 ```rust
 use std::fmt;

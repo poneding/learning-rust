@@ -1,4 +1,4 @@
-use std::{fmt::Display, iter::Sum};
+use std::fmt::Display;
 
 fn main() {
     let tweet = Tweet {

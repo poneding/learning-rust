@@ -1,0 +1,13 @@
+[book]
+authors = ["Pone Ding"]
+language = "zh-CN"
+multilingual = false
+src = "notes"
+title = "Learning Rust"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/poneding/learning-rust"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/poneding/learning-rust/edit/master/{path}"

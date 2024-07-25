@@ -1,4 +1,4 @@
-# Cargo 工具入门
+# Cargo
 
 cargo 是 Rust 的构建系统和包管理器。
 

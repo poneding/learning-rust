@@ -5,6 +5,9 @@ multilingual = false
 src = "notes"
 title = "Learning Rust"
 
+[build]
+build-dir = "notes/dist"
+
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"

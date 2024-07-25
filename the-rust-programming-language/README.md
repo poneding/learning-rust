@@ -1,5 +1,3 @@
-[Learning Rust](../README.md) / [the-rust-programming-language](zz_generated_mdi.md) / the-rust-programming-language
-
 # the-rust-programming-language
 
 The Rust Programming Language 一书代码实践。

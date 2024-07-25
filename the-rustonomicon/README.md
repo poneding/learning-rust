@@ -1,5 +1,3 @@
-[Learning Rust](../README.md) / [the-rustonomicon](zz_generated_mdi.md) / the-rustonomicon
-
 # the-rustonomicon
 
 使用 unsafe 关键字，在其作用域内允许编写不安全的 rust 代码。

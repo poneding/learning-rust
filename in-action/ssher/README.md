@@ -1,5 +1,3 @@
-[Learning Rust](../../README.md) / [in-action](../zz_generated_mdi.md) / [ssher](zz_generated_mdi.md) / ssher
-
 # ssher
 
 ssher (rust) 连接远程服务器命令行工具。

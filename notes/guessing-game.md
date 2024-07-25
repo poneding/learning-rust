@@ -1,12 +1,10 @@
-[Learning Rust](../../README.md) / [the-rust-programming-language](../zz_generated_mdi.md) / [ch02-00-guessing-game-tutorial](zz_generated_mdi.md) / Rust 猜数游戏
-
-# Rust 猜数游戏
+# 猜数游戏
 
 ## 创建项目
 
 ```bash
-cargo new rlb02_guessing-game
-cd rlb02_guessing-game
+cargo new guessing-game
+cd guessing-game
 ```
 
 编写 *src/main.rs* 文件：

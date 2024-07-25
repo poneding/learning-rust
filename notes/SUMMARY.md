@@ -1,6 +1,6 @@
 # Summary
 
-[Rust 笔记](./index.md)
+[Learning Rust](./index.md)
 
 ---
 

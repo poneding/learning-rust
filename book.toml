@@ -9,6 +9,7 @@ title = "Learning Rust"
 build-dir = "notes/dist"
 
 [output.html]
+cname = "learning-rust.poneding.com"
 default-theme = "light"
 preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/poneding/learning-rust"

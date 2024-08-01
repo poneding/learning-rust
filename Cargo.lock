@@ -857,6 +857,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "ch15-00-smart-pointers"
+version = "0.1.0"
+
+[[package]]
 name = "ch16-01-threads"
 version = "0.1.0"
 

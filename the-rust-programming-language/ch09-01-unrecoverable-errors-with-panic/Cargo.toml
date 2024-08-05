@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 
-[profile.dev]
-panic = 'abort'
+# [profile.dev]
+# panic = 'abort'

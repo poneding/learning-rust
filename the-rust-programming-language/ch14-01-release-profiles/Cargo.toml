@@ -5,11 +5,11 @@ edition = "2021"
 
 [dependencies]
 
-# 编译项目时配置优化级别
-# cargo build => dev [unoptimized + debuginfo]
-[profile.dev]
-opt-level = 0
+# # 编译项目时配置优化级别
+# # cargo build => dev [unoptimized + debuginfo]
+# [profile.dev]
+# opt-level = 0
 
-# cargo build --release => [optimized]
-[profile.release]
-opt-level = 3 # 0-3
+# # cargo build --release => [optimized]
+# [profile.release]
+# opt-level = 3 # 0-3

@@ -861,6 +861,26 @@ name = "ch15-00-smart-pointers"
 version = "0.1.0"
 
 [[package]]
+name = "ch15-01-box"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-02-deref"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-03-drop"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-04-rc"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-05-interior-mutability"
+version = "0.1.0"
+
+[[package]]
 name = "ch16-01-threads"
 version = "0.1.0"
 

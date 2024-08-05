@@ -19,4 +19,11 @@
 # 高级
 
 - [生命周期](./advanced/lifetime.md)
+- [智能指针](./advanced/smart-pointer.md)
 - [WASM 编程](./advanced/wasm.md)
+
+---
+
+# 规范
+
+- [组织结构](./specification/package-layout.md)

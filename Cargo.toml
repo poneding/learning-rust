@@ -49,7 +49,7 @@ members = [
     "rust-exercises/gigasecond",
     "rust-exercises/hello-world",
     "rust-exercises/reverse-string",
-    "rustlings",
+    # "rustlings",
     "the-rust-programming-language/ch01-03-hello-cargo",
     "the-rust-programming-language/ch02-00-guessing-game-tutorial",
     "the-rust-programming-language/ch03-05-control-flow",

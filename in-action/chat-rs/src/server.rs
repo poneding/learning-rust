@@ -4,6 +4,8 @@ use std::collections::{HashMap, HashSet};
 use actix::prelude::*;
 use rand::{rngs::ThreadRng, Rng};
 
+use crate::session;
+
 #[derive(Message)]
 #[rtype(result = "()")]
 pub struct Message(pub String);
@@ -28,8 +30,8 @@ pub struct ClientMessage {
     pub room: String,
 }
 
-pub struct ListRoom;
-impl actix::Message for ListRoom {
+pub struct ListRooms;
+impl actix::Message for ListRooms {
     type Result = Vec<String>;
 }
 
@@ -124,5 +126,50 @@ impl Handler<Disconnect> for ChatServer {
                 0,
             );
         }
+    }
+}
+
+impl Handler<ClientMessage> for ChatServer {
+    type Result = ();
+    fn handle(&mut self, msg: ClientMessage, _: &mut Self::Context) -> Self::Result {
+        self.send_message(&msg.room, &msg.msg, msg.id);
+    }
+}
+impl Handler<ListRooms> for ChatServer {
+    type Result = MessageResult<ListRooms>;
+    fn handle(&mut self, _: ListRooms, _: &mut Self::Context) -> Self::Result {
+        let mut rooms = vec![];
+        for key in self.rooms.keys() {
+            rooms.push(key.to_owned());
+        }
+        MessageResult(rooms)
+    }
+}
+impl Handler<Join> for ChatServer {
+    type Result = ();
+    fn handle(&mut self, msg: Join, _: &mut Self::Context) -> Self::Result {
+        let Join { id, name } = msg;
+        let mut rooms = vec![];
+        for (n, sessions) in &mut self.rooms {
+            if sessions.remove(&id) {
+                rooms.push(n.to_owned());
+            }
+        }
+        for room in rooms {
+            self.send_message(
+                &room,
+                &json!({
+                    "room": room,
+                    "value": vec![format!("Someone disconnect!")],
+                    "chat_type": session::ChatType::DISCONNECT
+                })
+                .to_string(),
+                0,
+            );
+        }
+        self.rooms
+            .entry(name.clone())
+            .or_insert_with(HashSet::new)
+            .insert(id);
     }
 }

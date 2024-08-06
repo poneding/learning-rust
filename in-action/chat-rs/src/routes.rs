@@ -109,3 +109,26 @@ pub async fn get_user_by_phone(
         Ok(res)
     }
 }
+
+#[get("/rooms")]
+pub async fn get_rooms(pool: web::Data<DbPool>) -> Result<HttpResponse, Error> {
+    let rooms = web::block(move || {
+        let mut conn = pool.get()?;
+        db::get_all_rooms(&mut conn)
+    })
+    .await?
+    .map_err(actix_web::error::ErrorInternalServerError)?;
+
+    if !rooms.is_empty() {
+        Ok(HttpResponse::Ok().json(rooms))
+    } else {
+        let res = HttpResponse::NotFound().body(
+            json!({
+                "error": 404,
+                "message": "No rooms available at the moment"
+            })
+            .to_string(),
+        );
+        Ok(res)
+    }
+}

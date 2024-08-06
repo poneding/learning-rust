@@ -1,5 +1,13 @@
 # chat-rs
 
+学习地址：<https://blog.logrocket.com/real-time-chat-app-rust-react/>
+
+## 程序架构
+
+![20240806084935](https://images.poneding.com/2024/06/20240806084935.png)
+
+## 搭建项目
+
 ```bash
 cargo new rust-react-chat
 
@@ -17,4 +25,22 @@ cargo install diesel_cli --no-default-features --features sqlite
 ...
 diesel = { version = "2.2.2", features = ["sqlite", "r2d2"] }
 ...
+```
+
+## 数据库设计
+
+[202408060847434](https://images.poneding.com/2024/06/202408060847434.png)
+
+数据库初始化：
+
+```bash
+mkdir migrations
+diesel migration generate create_users
+diesel migration generate create_rooms
+diesel migration generate create_conversations
+diesel migration generate dummy_data
+diesel database setup --database-url chat.db
+diesel migration run --database-url chat.db
+
+diesel print-schema > src/schema.rs
 ```

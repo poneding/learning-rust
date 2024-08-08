@@ -3,7 +3,6 @@ members = [
     "a-half-hour-to-learn-rust/function-types-closures",
     "a-half-hour-to-learn-rust/loops-iterators",
     "a-half-hour-to-learn-rust/returning-closures",
-    "in-action/chat-rs",
     "in-action/minigrep",
     "in-action/rust-react-chat",
     "in-action/ssher",

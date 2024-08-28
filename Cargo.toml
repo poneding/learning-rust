@@ -89,7 +89,7 @@ members = [
     "the-rust-programming-language/ch16-03-shared-state",
     "the-rust-programming-language/ch17-01-what-is-oo",
     "the-rust-programming-language/ch17-02-trait-objects",
-    "the-rust-programming-language/ch17-03-oo-design-patterns",
+    "the-rust-programming-language/ch17-03-oo-design-patterns", "the-rust-programming-language/ch18-03-pattern-syntax",
 ]
 
 resolver = "2"

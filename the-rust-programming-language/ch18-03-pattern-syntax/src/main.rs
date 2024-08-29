@@ -160,6 +160,7 @@ fn m6() {
 }
 
 // 7. 使用 .. 忽略剩余值
+#[allow(unused)]
 fn m7() {
     struct Point {
         x: i32,

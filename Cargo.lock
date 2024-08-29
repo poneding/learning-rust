@@ -1023,6 +1023,10 @@ name = "ch18-03-pattern-syntax"
 version = "0.1.0"
 
 [[package]]
+name = "ch19-01-unsafe-rust"
+version = "0.1.0"
+
+[[package]]
 name = "chrono"
 version = "0.4.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"

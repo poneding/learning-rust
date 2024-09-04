@@ -1027,6 +1027,14 @@ name = "ch19-01-unsafe-rust"
 version = "0.1.0"
 
 [[package]]
+name = "ch19-03-advanced-traits"
+version = "0.1.0"
+
+[[package]]
+name = "ch19-04-advanced-types"
+version = "0.1.0"
+
+[[package]]
 name = "chrono"
 version = "0.4.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"

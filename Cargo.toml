@@ -89,7 +89,7 @@ members = [
     "the-rust-programming-language/ch16-03-shared-state",
     "the-rust-programming-language/ch17-01-what-is-oo",
     "the-rust-programming-language/ch17-02-trait-objects",
-    "the-rust-programming-language/ch17-03-oo-design-patterns", "the-rust-programming-language/ch18-03-pattern-syntax", "the-rust-programming-language/ch19-01-unsafe-rust", "the-rust-programming-language/ch19-03-advanced-traits", "the-rust-programming-language/ch19-04-advanced-types",
+    "the-rust-programming-language/ch17-03-oo-design-patterns", "the-rust-programming-language/ch18-03-pattern-syntax", "the-rust-programming-language/ch19-01-unsafe-rust", "the-rust-programming-language/ch19-03-advanced-traits", "the-rust-programming-language/ch19-04-advanced-types", "the-rust-programming-language/ch19-05-advanced-functions-and-closures", "the-rust-programming-language/ch19-06-macros", "the-rust-programming-language/ch20-00-final-project-a-web-server",
 ]
 
 resolver = "2"

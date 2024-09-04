@@ -1035,6 +1035,18 @@ name = "ch19-04-advanced-types"
 version = "0.1.0"
 
 [[package]]
+name = "ch19-05-advanced-functions-and-closures"
+version = "0.1.0"
+
+[[package]]
+name = "ch19-06-macros"
+version = "0.1.0"
+
+[[package]]
+name = "ch20-00-final-project-a-web-server"
+version = "0.1.0"
+
+[[package]]
 name = "chrono"
 version = "0.4.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"

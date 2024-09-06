@@ -39,6 +39,8 @@ fn main() {
         // 第二步： 立马请求 /，发现请求被阻塞
         // curl localhost:7878
     }
+
+    println!("Shutting down.")
 }
 
 // HTTP 请求格式
@@ -79,10 +81,9 @@ fn handle_connection(mut stream: TcpStream) {
 // 2. 类型别名
 type Job = Box<dyn FnOnce() + Send + 'static>;
 
-#[allow(unused)]
 struct Worker {
     id: usize,
-    thread: JoinHandle<()>,
+    thread: Option<JoinHandle<()>>,
 }
 
 impl Worker {
@@ -90,25 +91,33 @@ impl Worker {
         let thread = thread::spawn(move || {
             // 不断的从 receiver 中获取请求，并处理
             loop {
-                let job = receiver.lock().unwrap().recv().unwrap();
-                println!("Worker {id} got a job; executing.");
+                let job = receiver.lock().unwrap().recv();
 
-                job();
+                match job {
+                    Ok(job) => {
+                        println!("Worker {id} got a job; executing.");
+
+                        job();
+                    }
+                    Err(_) => {
+                        println!("Worker {id} disconnected; shutting down.");
+                        break;
+                    }
+                }
             }
         });
         Self {
             id,
             // 一个已经运行的线程
-            thread,
+            thread: Some(thread),
         }
     }
 }
 
-#[allow(unused)]
 pub struct ThreadPool {
     // threads: Vec<JoinHandle<()>>,
     workers: Vec<Worker>,
-    sender: mpsc::Sender<Job>,
+    sender: Option<mpsc::Sender<Job>>,
 }
 
 impl ThreadPool {
@@ -135,7 +144,7 @@ impl ThreadPool {
         Self {
             // threads,
             workers,
-            sender,
+            sender: Some(sender),
         }
     }
 
@@ -144,6 +153,23 @@ impl ThreadPool {
         F: FnOnce() + Send + 'static,
     {
         let job = Box::new(f);
-        self.sender.send(job).unwrap();
+        self.sender.as_ref().unwrap().send(job).unwrap();
+    }
+}
+
+// 优雅停机与清理
+// 当主线程收到终止信号，执行完所有子线程
+impl Drop for ThreadPool {
+    fn drop(&mut self) {
+        drop(self.sender.take()); // 丢弃 sender，将拒绝新请求
+
+        for worker in &mut self.workers {
+            println!("Shutting down worker {}", worker.id);
+
+            // take() 取出现线程，并将 worker 的线程替换为 None
+            if let Some(thread) = worker.thread.take() {
+                thread.join().unwrap();
+            }
+        }
     }
 }

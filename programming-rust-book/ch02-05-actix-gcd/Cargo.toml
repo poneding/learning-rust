@@ -1,12 +1,10 @@
 [package]
-name = "prb03_mandelbrot"
+name = "ch02-05-actix-gcd"
 version = "0.1.0"
 edition = "2021"
-authors = ["Pone Ding <poneding@gmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-num = "0.4.1"
-image = "0.25.0"
-crossbeam = "0.8.4"
+actix-web = "4.9.0"
+serde = { version = "1.0.210", features = ["derive"] }

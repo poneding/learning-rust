@@ -2,7 +2,7 @@
 members = [
     "a-half-hour-to-learn-rust/function-types-closures",
     "a-half-hour-to-learn-rust/loops-iterators",
-    "a-half-hour-to-learn-rust/returning-closures",
+    "a-half-hour-to-learn-rust/returning-closures", "async-rust/understanding-async-await-1", "async-rust/understanding-async-await-2",
     "in-action/minigrep",
     "in-action/rust-react-chat",
     "in-action/ssher",

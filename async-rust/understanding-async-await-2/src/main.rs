@@ -1,7 +1,4 @@
-use std::{
-    future::{self, Future},
-    task::Poll,
-};
+use std::{future::Future, task::Poll};
 
 #[tokio::main]
 async fn main() {

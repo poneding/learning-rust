@@ -3637,6 +3637,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "understanding-async-await-3"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "unicase"
 version = "1.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"

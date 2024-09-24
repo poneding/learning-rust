@@ -1,6 +1,8 @@
 .PHONY:
 # commit: generate cargo-sort
 commit: cargo-sort
+	@echo "Pulling latest changes..."
+	@git pull
 	@echo "Committing changes..."
 	# check if there are any changes, if not, do nothing, otherwise, commit and push
 	@if [ -z "$$(git status --porcelain)" ]; then \

@@ -1,0 +1,8 @@
+[package]
+name = "ch02-07-quickreplace"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.10.6"
+text-colorizer = "1.0.0"

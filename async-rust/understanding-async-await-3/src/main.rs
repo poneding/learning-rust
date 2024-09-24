@@ -1,8 +1,7 @@
+#![allow(unused)]
 use core::{fmt, panic};
 use std::{
     future::Future,
-    os::macos::raw::stat,
-    process::Output,
     sync::{Arc, Mutex, MutexGuard},
     task::Poll,
 };

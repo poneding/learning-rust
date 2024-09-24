@@ -808,12 +808,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "ch02-05-icron-gcd"
+version = "0.1.0"
+dependencies = [
+ "iron",
+ "router",
+ "urlencoded",
+]
+
+[[package]]
 name = "ch02-06-mandelbrot"
 version = "0.1.0"
 dependencies = [
  "crossbeam",
  "image",
  "num",
+]
+
+[[package]]
+name = "ch02-07-quickreplace"
+version = "0.1.0"
+dependencies = [
+ "regex",
+ "text-colorizer",
 ]
 
 [[package]]
@@ -1030,6 +1047,16 @@ name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+
+[[package]]
+name = "colored"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cbf2150cce219b664a8a70df7a1f933836724b503f8a413af9365b4dcc4d90b8"
+dependencies = [
+ "lazy_static",
+ "windows-sys 0.48.0",
+]
 
 [[package]]
 name = "concurrent-queue"
@@ -1464,6 +1491,10 @@ checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
 dependencies = [
  "percent-encoding 2.3.1",
 ]
+
+[[package]]
+name = "from_into"
+version = "0.1.0"
 
 [[package]]
 name = "fuchsia-cprng"
@@ -2539,15 +2570,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5b40af805b3121feab8a3c29f04d8ad262fa8e0561883e7653e024ae4479e6de"
 
 [[package]]
-name = "prb02_iron-gcd"
-version = "0.1.0"
-dependencies = [
- "iron",
- "router",
- "urlencoded",
-]
-
-[[package]]
 name = "prb04_ownership"
 version = "0.1.0"
 
@@ -2976,9 +2998,9 @@ dependencies = [
 
 [[package]]
 name = "regex"
-version = "1.10.4"
+version = "1.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c117dbdfde9c8308975b6a18d71f3f385c89461f7b3fb054288ecf2a2058ba4c"
+checksum = "4219d74c6b67a3654a9fbebc4b419e22126d13d2f3c4a07ee0cb61ff79a79619"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -3304,6 +3326,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "string"
+version = "0.1.0"
+
+[[package]]
 name = "strsim"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3391,6 +3417,15 @@ dependencies = [
  "redox_syscall",
  "rustix 0.38.28",
  "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "text-colorizer"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b30f9b94bd367aacc3f62cd28668b10c7ae1784c7d27e223a1c21646221a9166"
+dependencies = [
+ "colored",
 ]
 
 [[package]]
@@ -3596,6 +3631,10 @@ name = "traitobject"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "efd1f82c56340fdf16f2a953d7bda4f8fdffba13d93b00844c25572110b26079"
+
+[[package]]
+name = "try_from_try_into"
+version = "0.1.0"
 
 [[package]]
 name = "type_conversion"

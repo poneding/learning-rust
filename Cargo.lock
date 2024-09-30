@@ -291,6 +291,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "adjacency_list_graph"
+version = "0.1.0"
+
+[[package]]
 name = "adler"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -602,6 +606,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b_tree_map"
+version = "0.1.0"
+
+[[package]]
+name = "b_tree_set"
+version = "0.1.0"
+
+[[package]]
 name = "backtrace"
 version = "0.3.71"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -635,6 +647,14 @@ name = "base64"
 version = "0.22.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
+
+[[package]]
+name = "binary_heap"
+version = "0.1.0"
+
+[[package]]
+name = "binary_search_tree"
+version = "0.1.0"
 
 [[package]]
 name = "bit_field"
@@ -684,6 +704,10 @@ dependencies = [
  "piper",
  "tracing",
 ]
+
+[[package]]
+name = "bloom_filter"
+version = "0.1.0"
 
 [[package]]
 name = "bodyparser"
@@ -808,7 +832,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ch02-05-icron-gcd"
+name = "ch02-05-iron-gcd"
 version = "0.1.0"
 dependencies = [
  "iron",
@@ -1017,6 +1041,10 @@ dependencies = [
  "wasm-bindgen",
  "windows-targets 0.52.4",
 ]
+
+[[package]]
+name = "circular_buffer"
+version = "0.1.0"
 
 [[package]]
 name = "clap"
@@ -1230,6 +1258,10 @@ dependencies = [
 
 [[package]]
 name = "demo1"
+version = "0.1.0"
+
+[[package]]
+name = "deque"
 version = "0.1.0"
 
 [[package]]
@@ -1709,6 +1741,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "hash_map"
+version = "0.1.0"
+
+[[package]]
+name = "hash_set"
+version = "0.1.0"
+
+[[package]]
 name = "hashbrown"
 version = "0.14.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2050,6 +2090,10 @@ dependencies = [
  "pkg-config",
  "vcpkg",
 ]
+
+[[package]]
+name = "linked_list"
+version = "0.1.0"
 
 [[package]]
 name = "linux-raw-sys"
@@ -2641,6 +2685,10 @@ checksum = "7f6d64c71eb498fe9eae14ce4ec935c555749aef511cca85b5568910d6e48001"
 dependencies = [
  "bytemuck",
 ]
+
+[[package]]
+name = "queue"
+version = "0.1.0"
 
 [[package]]
 name = "quick-error"
@@ -3326,6 +3374,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "stack"
+version = "0.1.0"
+
+[[package]]
 name = "string"
 version = "0.1.0"
 
@@ -3528,6 +3580,10 @@ name = "tinyvec_macros"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
+
+[[package]]
+name = "tire"
+version = "0.1.0"
 
 [[package]]
 name = "tokio"
@@ -3827,6 +3883,14 @@ name = "vec_map"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f1bddf1187be692e79c5ffeab891132dfb0f236ed36a43c7ed39f1165ee20191"
+
+[[package]]
+name = "vec_queue"
+version = "0.1.0"
+
+[[package]]
+name = "vector"
+version = "0.1.0"
 
 [[package]]
 name = "version-compare"

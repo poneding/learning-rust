@@ -1,5 +1,5 @@
 [package]
-name = "ch02-05-icron-gcd"
+name = "ch02-05-iron-gcd"
 version = "0.1.0"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]

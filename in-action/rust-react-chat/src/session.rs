@@ -19,6 +19,7 @@ const CLIENT_TIMEOUT: Duration = Duration::from_secs(10);
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 
 #[derive(Debug)]
+#[allow(unused)]
 pub struct WsChatSession {
     pub id: usize,
     pub hb: Instant,

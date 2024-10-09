@@ -65,7 +65,7 @@ fn wide_characters() {
 }
 #[test]
 #[ignore]
-#[cfg(feature = "grapheme")]
+// #[cfg(feature = "grapheme")]
 fn grapheme_cluster_with_pre_combined_form() {
     let input = "Würstchenstand";
     let output = reverse(input);
@@ -74,7 +74,7 @@ fn grapheme_cluster_with_pre_combined_form() {
 }
 #[test]
 #[ignore]
-#[cfg(feature = "grapheme")]
+// #[cfg(feature = "grapheme")]
 fn grapheme_clusters() {
     let input = "ผู้เขียนโปรแกรม";
     let output = reverse(input);

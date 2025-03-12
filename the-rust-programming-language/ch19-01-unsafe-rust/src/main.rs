@@ -92,9 +92,10 @@ fn change_hello(s: &'static str) {
     }
 }
 
+#[allow(static_mut_refs)]
 fn m5() {
     change_hello("Hello, Rust");
     unsafe {
-        println!("HELLO is: {HELLO}");
+        println!("HELLO is: {}", HELLO);
     }
 }

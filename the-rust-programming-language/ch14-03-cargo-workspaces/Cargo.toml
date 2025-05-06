@@ -1,7 +1,7 @@
 [package]
 name = "ch14-03-cargo-workspaces"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 # ch14-02-publishing-to-crates-io = "0.1.0"

@@ -70,6 +70,7 @@ members = [
     "rust-by-example/conversion/try_from_try_into",
     "rust-by-example/e01_print",
     "rust-by-example/e02_primitives",
+    "rust-cookbook",
     "rust-exercises/gigasecond",
     "rust-exercises/hello-world",
     "rust-exercises/reverse-string",

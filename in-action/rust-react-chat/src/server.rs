@@ -3,7 +3,8 @@ use std::collections::{HashMap, HashSet};
 use serde_json::json;
 
 use actix::prelude::*;
-use rand::{self, rngs::ThreadRng, Rng};
+use rand::Rng;
+use rand::{self, rngs::ThreadRng};
 
 use crate::session;
 
@@ -59,7 +60,7 @@ impl ChatServer {
         Self {
             sessions: HashMap::new(),
             rooms,
-            rng: rand::thread_rng()
+            rng: rand::thread_rng(),
         }
     }
 
@@ -84,16 +85,21 @@ impl Handler<Connect> for ChatServer {
     type Result = usize;
 
     fn handle(&mut self, msg: Connect, _: &mut Context<Self>) -> Self::Result {
-        let id = self.rng.gen::<usize>();
+        let id = self.rng.r#gen::<usize>();
         self.sessions.insert(id, msg.addr);
         self.rooms
             .entry("main".to_string())
             .or_insert_with(HashSet::new)
             .insert(id);
-        self.send_message("main", &json!({
-            "value": vec![format!("{}", id)],
-            "chat_type": session::ChatType::CONNECT
-        }).to_string(), 0);
+        self.send_message(
+            "main",
+            &json!({
+                "value": vec![format!("{}", id)],
+                "chat_type": session::ChatType::CONNECT
+            })
+            .to_string(),
+            0,
+        );
         id
     }
 }
@@ -112,11 +118,16 @@ impl Handler<Disconnect> for ChatServer {
         }
 
         for room in rooms {
-            self.send_message("main", &json!({
-                "room": room,
-                "value": vec![format!("Someone disconnect!")],
-                "chat_type": session::ChatType::DISCONNECT
-            }).to_string(), 0);
+            self.send_message(
+                "main",
+                &json!({
+                    "room": room,
+                    "value": vec![format!("Someone disconnect!")],
+                    "chat_type": session::ChatType::DISCONNECT
+                })
+                .to_string(),
+                0,
+            );
         }
     }
 }
@@ -145,7 +156,7 @@ impl Handler<Join> for ChatServer {
     type Result = ();
 
     fn handle(&mut self, msg: Join, _: &mut Self::Context) -> Self::Result {
-        let Join {id, name} = msg;
+        let Join { id, name } = msg;
         let mut rooms = vec![];
 
         for (n, sessions) in &mut self.rooms {
@@ -155,11 +166,16 @@ impl Handler<Join> for ChatServer {
         }
 
         for room in rooms {
-            self.send_message(&room, &json!({
-                "room": room,
-                "value": vec![format!("Someone disconnect!")],
-                "chat_type": session::ChatType::DISCONNECT
-            }).to_string(), 0);
+            self.send_message(
+                &room,
+                &json!({
+                    "room": room,
+                    "value": vec![format!("Someone disconnect!")],
+                    "chat_type": session::ChatType::DISCONNECT
+                })
+                .to_string(),
+                0,
+            );
         }
 
         self.rooms

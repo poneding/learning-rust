@@ -3475,6 +3475,7 @@ dependencies = [
  "flate2",
  "lazy_static",
  "log 0.4.27",
+ "num_cpus",
  "rand 0.9.1",
  "rand_distr",
  "semver",
